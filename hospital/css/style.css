@@ -1,0 +1,98 @@
+@charset"UTF-8";
+
+
+/*hospital top のcss*/
+
+html{
+	font-family:san-serif;
+}
+
+/*全体*/
+li{
+  list-style: none;
+}
+/*h2{
+	margin-left: 50px;
+}*/
+
+*{
+max-width: 100%;
+height: auto;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+/*body全体*/
+body {
+	background-color: #EEF9FF;
+	margin:0px 0px 0px 0px;
+	/*border:3px groove #8798e2;*/
+	/*border-radius: 10px;*/
+	}
+
+/*全体の親要素ラッパー編集*/
+.wrapper{
+	/*margin :0 auto 0 auto;*/
+	/*max-width:960px;*/
+	border:3px groove #8798e2;
+	border-radius: 10px;
+
+}
+
+input{
+	font-size: 20px
+	}
+
+
+/*ヘッダー*/	
+header{
+	text-align: center;
+	font-size: 30px;
+  
+}
+
+h1{
+	padding-top: 50px;
+	border-top: 5px dotted rgb(6, 71, 250);
+	font-weight: bold;
+	
+}
+
+
+/*ここからメイン*/
+
+/*ボタン要素の大きさ*/
+
+.btn.btn-info.btn-lg.btn-block{
+	height: 120px;
+	font-size: 50px;
+	margin: 50px 0 50px 0;
+	border-radius:30px;
+}
+
+
+/*ここからフッター*/
+footer{
+	text-align: center;
+	margin: 200px 0 100px 0;
+	vertical-align:center;
+}
+
+.btn.btn-outline-info{
+	height: 60px;
+	width: 400px;
+	border-style: solid; border-width: thick;
+	font-weight: bold;
+
+}
+
+
+
+table{
+	display: inline-block;
+	border-collapse:separate;
+	border-spacing:40px;
+}

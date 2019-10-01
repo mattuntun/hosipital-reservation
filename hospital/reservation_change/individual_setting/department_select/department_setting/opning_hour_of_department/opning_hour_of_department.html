@@ -1,0 +1,682 @@
+<!DOCTYPE html><!--このサイトはhtmlだよ-->
+<html lang="ja"><!--ここからhtmlが始まるよ-->
+  <head><!--このサイトの設定だよ-->
+    <meta charset="utf-8"><!--このサイトの構成文字はutf-8だよ-->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+      <link rel="stylesheet" href="../../../../css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
+    <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    
+    <title>診療科別　開診時間設定</title><!--サイトのバータイトルを　　　　　　　　　　　　入力！！！-->
+    <!--<style>
+    *{
+      outline: 1px solid #ff0000;
+    }
+    </style>-->
+  </head><!--ここで設定終了-->
+  
+  <body><!--ここから本文が始まるよ-->
+  <div class="wrapper"><!--body全体のclassをラッパーとする-->
+    
+    <header><!--ここからヘッダー始まるよ-->
+      <br>
+      <h1>診療科別　開診時間設定(受付時間)設定
+      <br>※個別設定を優先反映します
+      </h1>    
+
+    </header><!--ここでヘッダー終わり-->
+  <br>
+  <br>
+  <br><!--ヘッダーとメインの間のスペース-->
+  <br>
+  <br>
+  
+    <main>
+      
+      <!--開始　開診時間　開始-->
+      
+      <section class="Setting-explanation"><!--開始　Setting-explanation　開始-->
+        <h2>開診時間を設定してください</h2>
+
+        <div class="reflect-all-items"><!--開始　全科共通設定のチェックボックス　開始-->
+          <h2>適用させる場合は&#x2611;</h2>       
+          
+          <br> <!--チェックボックスとh2のスペース-->    
+          <br>
+          
+          
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox18" name="chkbox18" value="18">
+            <label for="chkbox18">全科共通設定を優先反映する</label>
+          </div>
+
+          <br>
+          <br>
+
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox18" name="chkbox18" value="18" checked>
+            <label for="chkbox18">全科共通設定に加えて個別設定</label>
+          </div>
+        </div><!--終了　全科共通設定のチェックボックス　終了-->
+
+        <h2>開診時間を設定してください</h2>
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox1" name="chkbox01" value="1" checked>
+            <label for="chkbox1">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="開診時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="開診時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を開診時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox2" name="chkbox02" value="2">
+            <label for="chkbox2">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を開診時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　Setting-explanation　終了-->
+
+      <!--終了　開院時間　終了-->
+      
+
+      <!--開始　休診時間　開始-->
+
+      <section class="Setting-explanation"><!--開始　Setting-explanation　開始-->
+        <br>
+        <br>
+
+        <h2>休診時間を設定してください</h2>
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox3" name="chkbox03" value="3" checked>
+            <label for="chkbox3">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診開始時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診開始時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を休診開始時間</p>
+                </td>             
+              </tr>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診終了時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診開始時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を休診終了時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+        
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox4" name="chkbox04" value="4">
+            <label for="chkbox4">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診開始時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診開始時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を休診開始時間</p>
+                </td>             
+              </tr>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診終了時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="休診終了時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を休診終了時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　Setting-explanation　終了-->
+
+      <!--終了　休診時間　終了-->
+
+      <!--開始　閉院時間　開始-->
+
+      <section class="Setting-explanation"><!--開始　Setting-explanation　開始-->
+        <br>
+        <br>
+        
+        <h2>閉診時間を設定してください</h2>
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox5" name="chkbox05" value="5" checked>
+            <label for="chkbox5">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="閉診時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="閉診時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を閉診時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox6" name="chkbox06" value="6">
+            <label for="chkbox6">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="閉診時間　時間" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0時">0時</option>
+                        <option value="1時">1時</option>
+                        <option value="2時">2時</option>
+                        <option value="3時">3時</option>
+                        <option value="4時">4時</option>
+                        <option value="5時">5時</option>
+                        <option value="6時">6時</option>
+                        <option value="7時">7時</option>
+                        <option value="8時">8時</option>
+                        <option value="9時">9時</option>
+                        <option value="10時">10時</option>
+                        <option value="11時">11時</option>
+                        <option value="12時">12時</option>
+                        <option value="13時">13時</option>
+                        <option value="14時">14時</option>
+                        <option value="15時">15時</option>
+                        <option value="16時">16時</option>
+                        <option value="17時">17時</option>
+                        <option value="18時">18時</option>
+                        <option value="19時">19時</option>
+                        <option value="20時">20時</option>
+                        <option value="21時">21時</option>
+                        <option value="22時">22時</option>
+                        <option value="23時">23時</option>
+                        <option value="24時">24時</option> 
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="閉診時間　分" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="00分">00分</option>
+                        <option value="10分">10分</option>
+                        <option value="20分">20分</option>
+                        <option value="30分">30分</option>
+                        <option value="40分">40分</option>
+                        <option value="50分">50分</option>
+                        <option value="60分">60分</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p class="time-term">を閉診時間</p>
+                </td>             
+              </tr>
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　Setting-explanation　終了-->
+
+      <!--終了　閉院時間　終了-->
+
+    </main>
+  
+  
+  
+  <br>
+  <br>
+  <br><!--メインとフッターの間のスペース-->
+  <br>
+  <br>
+
+
+      <footer><!--フッターだよ-->
+        <section class="anything-top"><!--各ボタン-->
+          <table>
+            <tr>
+              <td>
+                <input type="button" class="btn btn-outline-info" value="設定を適用">
+              </td>
+              <td>
+                <a href="../../../../../hospital_top.html"><button type="button" class="btn btn-outline-info">設定画面トップ</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" class="btn btn-outline-info">医療機関HPトップ</button>
+              </td>
+              <td>
+                <a href="../../../../../../reservation_top.html"><button type="button" class="btn btn-outline-info">ログイン画面へ</button></a>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </footer>
+      
+
+
+
+
+      
+
+      <section><!--本文内のカテゴリーだよ-->
+        
+      </section><!--本文内のカテゴリー終わり-->
+
+      <section><!--本文内のカテゴリーだよ-->
+      
+      </section><!--本文内のカテゴリー終わり-->
+      
+      <section><!--本文内のカテゴリーだよ-->
+      
+      </section><!--本文内のカテゴリー終わり-->
+      
+
+
+
+    </div><!--body全体のclassをラッパー終わり-->
+  </body><!--ここで本文終わりだよ-->
+
+</html><!--ここでhtmlが終わるよ-->
+
+
+
+
+
+
+
+
+
+
+

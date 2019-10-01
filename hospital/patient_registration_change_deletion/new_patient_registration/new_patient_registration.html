@@ -1,0 +1,2466 @@
+<!DOCTYPE html><!--このサイトはhtmlだよ-->
+<html lang="ja"><!--ここからhtmlが始まるよ-->
+  <head><!--このサイトの設定だよ-->
+    <meta charset="utf-8"><!--このサイトの構成文字はutf-8だよ-->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+      <link rel="stylesheet" href="../../reservation change/css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
+    <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    
+    <title>新規患者登録</title><!--サイトのバータイトルを　　　　　　　　　　　　入力！！！-->
+    <!--<style>
+    *{
+      outline: 1px solid #ff0000;
+    }
+    </style>-->
+  </head><!--ここで設定終了-->
+  
+  <body><!--ここから本文が始まるよ-->
+  <div class="wrapper"><!--body全体のclassをラッパーとする-->
+    
+    <header><!--ここからヘッダー始まるよ-->
+      <br>
+      <h1>新規患者登録</h1>    
+
+    </header><!--ここでヘッダー終わり-->
+  <br>
+  <br>
+  <br><!--ヘッダーとメインの間のスペース-->
+  <br>
+  <br>
+  
+    <main>
+      <section class="new-patient-registration"><!--開始　When is the holiday　開始-->
+        <form>
+          <div class="form-group">
+            <label class="control-label" id="new-patient-registration">追加診療科名を記載してください</label>
+            <input class="form-control" id="new-patient-registration" type="text">
+          </div>
+
+          <br>
+          <br>
+
+          <div class="form-group">
+            <label class="control-label">パスワードを入力してください</label>
+            <input class="form-control" type="text">
+          </div>
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox1" name="chkbox01" value="1" checked>
+            <label for="chkbox1">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                    <option value="0：00~">0：00~</option>
+                    <option value="1：00~">1：00~</option>
+                    <option value="2：00~">2：00~</option>
+                    <option value="3：00~">3：00~</option>
+                    <option value="4：00~">4：00~</option>
+                    <option value="5：00~">5：00~</option>
+                    <option value="6：00~">6：00~</option>
+                    <option value="7：00~">7：00~</option>
+                    <option value="8：00~">8：00~</option>
+                    <option value="9：00~">9：00~</option>
+                    <option value="10：00~">10：00~</option>
+                    <option value="11：00~">11：00~</option>
+                    <option value="12：00~">12：00~</option>
+                    <option value="13：00~">13：00~</option>
+                    <option value="14：00~">14：00~</option>
+                    <option value="15：00~">15：00~</option>
+                    <option value="16：00~">16：00~</option>
+                    <option value="17：00~">17：00~</option>
+                    <option value="18：00~">18：00~</option>
+                    <option value="19：00~">19：00~</option>
+                    <option value="20：00~">20：00~</option>
+                    <option value="21：00~">21：00~</option>
+                    <option value="22：00~">22：00~</option>
+                    <option value="23：00~">23：00~</option>
+                    <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox2" name="chkbox02" value="2">
+            <label for="chkbox2">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox3" name="chkbox03" value="3">
+            <label for="chkbox3">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox4" name="chkbox04" value="4">
+            <label for="chkbox4">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox5" name="chkbox05" value="5">
+            <label for="chkbox5">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox6" name="chkbox06" value="6">
+            <label for="chkbox6">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox7" name="chkbox07" value="7">
+            <label for="chkbox7">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox8" name="chkbox08" value="8">
+            <label for="chkbox8">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox9" name="chkbox09" value="9">
+            <label for="chkbox9">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox10" name="chkbox10" value="10">
+            <label for="chkbox10">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox11" name="chkbox11" value="11">
+            <label for="chkbox11">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox12" name="chkbox12" value="12">
+            <label for="chkbox12">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox13" name="chkbox13" value="13">
+            <label for="chkbox13">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox14" name="chkbox14" value="14">
+            <label for="chkbox14">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox15" name="chkbox15" value="15">
+            <label for="chkbox15">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox16" name="chkbox16" value="16">
+            <label for="chkbox16">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+      <section class="Setting-explanation"><!--開始　When is the holiday　開始-->
+        <h2>適用させる場合は&#x2611;</h2>       
+        
+        <br> <!--チェックボックスとh2のスペース-->        
+
+          <div class="chkbox"><!--開始　chkbox　開始--> 
+            <input type="checkbox" id="chkbox17" name="chkbox17" value="17">
+            <label for="chkbox17">以下の設定を適用する</label>
+          </div>
+          <div class="form-row">
+            <table>
+              <tr>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="毎週">毎週</option>
+                        <option value="第１">第１</option>
+                        <option value="第１＆第２">第１＆第２</option>
+                        <option value="第１＆第３">第１＆第３</option>
+                        <option value="第１＆第４">第１＆第４</option>
+                        <option value="第１＆第５">第１＆第５</option>
+                        <option value="第２">第２</option>
+                        <option value="第２＆第３">第２＆第３</option>
+                        <option value="第２＆第４">第２＆第４</option>
+                        <option value="第２＆第５">第２＆第５</option>
+                        <option value="第３">第３</option>
+                        <option value="第３＆第４">第３＆第４</option>
+                        <option value="第３＆第５">第３＆第５</option>
+                        <option value="第４">第４</option>
+                        <option value="第４＆第５">第４＆第５</option>
+                        <option value="第５">第５</option>
+                        </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                    <p>
+                      <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                      <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                      <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value=”日曜日”>日曜日</option>
+                        <option value="月曜日">月曜日</option>
+                        <option value="火曜日">火曜日</option>
+                        <option value="水曜日">水曜日</option>
+                        <option value="木曜日">木曜日</option>
+                        <option value="金曜日">金曜日</option>
+                        <option value="土曜日">土曜日</option>              
+                      </select>
+                    </p>                                          
+                  </form>
+                </td>
+                <td>
+                  <p></p>
+                </td>             
+            <br>
+            <br>
+              </tr>
+              <tr>
+               <td>
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                <p>
+                <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                  <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                      <option value="0：00~">0：00~</option>
+                      <option value="1：00~">1：00~</option>
+                      <option value="2：00~">2：00~</option>
+                      <option value="3：00~">3：00~</option>
+                      <option value="4：00~">4：00~</option>
+                      <option value="5：00~">5：00~</option>
+                      <option value="6：00~">6：00~</option>
+                      <option value="7：00~">7：00~</option>
+                      <option value="8：00~">8：00~</option>
+                      <option value="9：00~">9：00~</option>
+                      <option value="10：00~">10：00~</option>
+                      <option value="11：00~">11：00~</option>
+                      <option value="12：00~">12：00~</option>
+                      <option value="13：00~">13：00~</option>
+                      <option value="14：00~">14：00~</option>
+                      <option value="15：00~">15：00~</option>
+                      <option value="16：00~">16：00~</option>
+                      <option value="17：00~">17：00~</option>
+                      <option value="18：00~">18：00~</option>
+                      <option value="19：00~">19：00~</option>
+                      <option value="20：00~">20：00~</option>
+                      <option value="21：00~">21：00~</option>
+                      <option value="22：00~">22：00~</option>
+                      <option value="23：00~">23：00~</option>
+                      <option value="24：00~">24：00~</option>
+                  </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td>        
+                <form method="post" action=""><!--データ送信設定　post⇒本文　get⇒URL　actionで送信先を指定-->
+                  <p>
+                  <!--セレクトボックスの形態 size="2"以上にするとリスト形式-->
+                  <!--セレクトボックスの形態 ブートストラップによってclass="form-control"で画面いっぱい-->
+                    <select name="カレンダー表示設定-何カ月先か-" class="form-control" size="1" style="height: 100px; font-size: 32px;">
+                        <option value="0：00">0：00</option>
+                        <option value="1：00">1：00</option>
+                        <option value="2：00">2：00</option>
+                        <option value="3：00">3：00</option>
+                        <option value="4：00">4：00</option>
+                        <option value="5：00">5：00</option>
+                        <option value="6：00">6：00</option>
+                        <option value="7：00">7：00</option>
+                        <option value="8：00">8：00</option>
+                        <option value="9：00">9：00</option>
+                        <option value="10：00">10：00</option>
+                        <option value="11：00">11：00</option>
+                        <option value="12：00">12：00</option>
+                        <option value="13：00">13：00</option>
+                        <option value="14：00">14：00</option>
+                        <option value="15：00">15：00</option>
+                        <option value="16：00">16：00</option>
+                        <option value="17：00">17：00</option>
+                        <option value="18：00">18：00</option>
+                        <option value="19：00">19：00</option>
+                        <option value="20：00">20：00</option>
+                        <option value="21：00">21：00</option>
+                        <option value="22：00">22：00</option>
+                        <option value="23：00">23：00</option>
+                        <option value="24：00">24：00</option>
+                    </select>
+                  </p>                                          
+                </form>
+               </td>
+               <td><p class="holiday-terms">を休診設定</p></td>
+              </tr>  
+            </table>
+          </div><!--終了　chkbox　終了-->
+      </section><!--終了　When is the holiday　終了-->
+
+  
+    </main>
+  
+  
+  
+  <br>
+  <br>
+  <br><!--メインとフッターの間のスペース-->
+  <br>
+  <br>
+
+
+      <footer><!--フッターだよ-->
+        <section class="anything-top"><!--各ボタン-->
+          <table>
+            <tr>
+              <td>
+                <input type="button" class="btn btn-outline-info" value="設定を適用">
+              </td>
+              <td>
+                <a href="../../hospital top.html"><button type="button" class="btn btn-outline-info">設定画面トップ</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" class="btn btn-outline-info">医療機関HPトップ</button>
+              </td>
+              <td>
+                <a href="../../../reservation top .html"><button type="button" class="btn btn-outline-info">ログイン画面へ</button></a>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </footer>
+      
+
+
+
+
+      
+
+      <section><!--本文内のカテゴリーだよ-->
+        
+      </section><!--本文内のカテゴリー終わり-->
+
+      <section><!--本文内のカテゴリーだよ-->
+      
+      </section><!--本文内のカテゴリー終わり-->
+      
+      <section><!--本文内のカテゴリーだよ-->
+      
+      </section><!--本文内のカテゴリー終わり-->
+      
+
+
+
+    </div><!--body全体のclassをラッパー終わり-->
+  </body><!--ここで本文終わりだよ-->
+
+</html><!--ここでhtmlが終わるよ-->
+
+
+
+
+
+
+
+
+
+
+
