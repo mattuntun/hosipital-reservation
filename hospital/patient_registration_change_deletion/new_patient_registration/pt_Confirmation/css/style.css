@@ -229,8 +229,23 @@ l{    /*ラベル*/
 
 
 /*終了　 入力フォーム　終了*/
-/*終了　新規患者登録　終了*/
 
+/*開始　患者情報登録画面　開始*/
+
+.pt-id{
+	height: 100px;
+
+}
+
+.pt-id h3{
+	margin: 50px;
+	font-size: 3ex;
+}
+
+td{
+	font-size: 3ex;
+	margin-top: -20px;
+}
 
 
 

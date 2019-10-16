@@ -10,6 +10,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <script language="JavaScript">
+      
+        function check() {
+            if(document.nyuuryoku.pt_id.value == "") {
+                alert("IDを入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.kanji_last_name.value == "") {
+                alert("名前を入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.kanji_name.value == "") {
+                alert("名前を入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.kata_last_name.value == "") {
+                alert("名前を入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.kata_name.value == "") {
+                alert("名前を入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.birthday.value == "") {
+                alert("生年月日を入力してください");
+                return false;
+            }
+            if(document.nyuuryoku.mail_address.value == "") {
+                alert("メールアドレスを入力して下さい");
+                return false;
+            }
+           
+        }
+       
+      </script>
+
 
     
     <title>新規患者登録</title><!--サイトのバータイトルを　　　　　　　　　　　　入力！！！-->
@@ -35,8 +71,8 @@
   <br>
   
     <main>
-      <section class="new-patient-registration"><!--開始　When is the holiday　開始-->
-        <form>
+      <form method="POST" action="pt_Confirmation/pt_Confirmation_page.php" name="nyuuryoku" onsubmit="return check()">
+        <section class="new-patient-registration"><!--開始　new-patient-registration　開始-->
           <div class="form-group">
             <label class="control-label" id="new-patient-registration">患者ID登録</label>
             <input class="form-control" id="new-patient-registration" type="text" name="pt_id">
@@ -82,7 +118,7 @@
                     </td>
                     <td>
                         <label class="control-label">メールアドレス</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="mail_address">
                        </td>
                     </td>
                   </tr>
@@ -93,9 +129,21 @@
                             <option value="man" class="form-control">男</option>
                             <option value="woman" class="form-control">女</option>
                         </select>
+                      
                   </tr>
                 </table>
-          </div>
+            </div>
+            
+            <div class="apply">
+              <h2>内容を確認して情報を登録</h2>
+              
+                <button type="submit" class="btn btn-primary btn-danger btn-lg disabled" onclick="location.href='pt_Confirmation/pt_Confirmation_page.php'">
+                  内容を登録
+                </button>
+             </div>
+             
+         </section><!--終了　new-patient-registration　終了-->
+      </form>  
     </main>
 
       <footer><!--フッターだよ-->
@@ -103,17 +151,14 @@
           <table>
             <tr>
               <td>
-                <input type="button" class="btn btn-outline-info" value="設定を適用">
+                <a href="../../hospital top.html"><button type="button" class="btn btn-outline-info">設定画面トップ</button></a>
               </td>
               <td>
-                <a href="../../hospital top.html"><button type="button" class="btn btn-outline-info">設定画面トップ</button></a>
+                  <button type="button" class="btn btn-outline-info">医療機関HPトップ</button>
               </td>
             </tr>
             <tr>
-              <td>
-                <button type="button" class="btn btn-outline-info">医療機関HPトップ</button>
-              </td>
-              <td>
+             <td>
                 <a href="../../../reservation top .html"><button type="button" class="btn btn-outline-info">ログイン画面へ</button></a>
               </td>
             </tr>

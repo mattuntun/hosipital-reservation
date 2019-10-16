@@ -1,9 +1,8 @@
-<!DOCTYPE html><!--このサイトはhtmlだよ-->
-<html lang="ja"><!--ここからhtmlが始まるよ-->
-  <head><!--このサイトの設定だよ-->
-    <meta charset="utf-8"><!--このサイトの構成文字はutf-8だよ-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
     
-    <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--イイ感じに携帯でも縮小してくれる-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--IEでもいい感じに表示してくれる-->
 
@@ -16,54 +15,120 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
    
 
-    <link rel="stylesheet" href="css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
+    <link rel="stylesheet" href="css/style.css">
 
-   <!--適用するとアウトライン表示<style>
+   <style>
     *{
       outline: 1px solid #ff0000;
     }
-    </style>-->
+    </style>
+
+
     <title></title><!--サイトのバータイトルを　　入力！！！-->
-  </head><!--ここで設定終了-->
+
+  </head>
   
-  <body><!--ここから本文が始まるよ-->
-  <div class="wrapper"><!--body全体のclassをラッパーとする-->
+  <body>
+  <div class="wrapper">
 
-    <header><!--ここからヘッダー始まるよ-->
+    <header>
     <h1>患者登録情報確認</h1>
-       
-
-    </header><!--ここでヘッダー終わり-->
-    <main><!--メイン始まる-->
+    <h2>適用する情報は下記の通りです</h2>
+    </header>
     
+    <main>
+
+    <?php /*患者情報取得欄 */
+    /*患者名前*/
+    $pt_id = $_POST['pt_id']; //患者ＩＤ
+
+    /*患者名前*/
+    $kanji_lastname = $_POST['kanji_last_name']; //漢字姓
+    $kanji_name = $_POST['kanji_name']; //漢字名前
+    $kata_lastname = $_POST['kata_last_name']; //カタカナ姓
+    $kata_name = $_POST['kata_name']; //カタカナ名前
+
+    /*生年月日*/
+    $birthday = $_POST['birthday'];
+
+    /*性別*/
+    $sex = $_POST['sex'];
+
+    /*メールアドレス*/
+    $mail_address = $_POST['mail_address'];
+
+    ?>
+    <section class="pt-id">
+      <?php
+      echo "<h3>患者ＩＤ：" .$pt_id ."</h3>";
+      ?>
+    </section>
+  
+
+<table>
+  <tr>
+    <th>
+      <h3>患者姓(漢字)</h3>
+    </th>
+    <th>
+      <h3>患者名前(漢字)</h3>
+    </th>
+  <tr>
+    <td>
+      <h3>$kanji_lastname</h3>
+    </td>
+    <td>
+      <h3>$kanji_name</h3>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <h3>患者姓(カタカナ)</h3>
+    </th>
+    <th>
+      <h3>患者名前(カタカナ)</h3>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>$kata_lastname</h3>
+    </td>
+    <td>
+      <h3>$kata_name</h3>
+    </td>
+  </tr>
+  
+
+
+</table>
+
+
+
+    
+
+
 
 
     </main>
-    <footer><!--フッターだよ-->
+    <footer>
     
 
 
 
-    </footer><!--フッター終わり-->
+    </footer>
 
     
-    <section><!--本文内のカテゴリーだよ-->
+    <section>
       
-    </section><!--本文内のカテゴリー終わり-->
+    </section>
 
-    <section><!--本文内のカテゴリーだよ-->
-    
-    </section><!--本文内のカテゴリー終わり-->
-    
-    <section><!--本文内のカテゴリーだよ-->
-    
-    </section><!--本文内のカテゴリー終わり-->
+  
     
 
 
 
-  </div><!--body全体のclassをラッパー終わり-->
-  </body><!--ここで本文終わりだよ-->
+  </div>
+  </body>
 
 </html><!--ここでhtmlが終わるよ-->
 
