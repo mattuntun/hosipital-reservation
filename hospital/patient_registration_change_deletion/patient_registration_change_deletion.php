@@ -33,28 +33,27 @@
         <section class="patient setting"><!--予約設定変更の入り口-->
           <br>
           <br>
-            <a href="">
-              <button type="button" class="btn btn-info btn-lg btn-block">
+            
+              <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='new_patient_registration/new_patient_registration.php'">
                新規患者登録
               </button>
-            </a>
-            <a href="">
-              <button type="button" class="btn btn-info btn-lg btn-block">
+            
+            
+              <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='new_patient_registration/new_patient_registration.php'">
               患者情報変更
               </button>
-            </a>
-            <a href="">
-              <button type="button" class="btn btn-info btn-lg btn-block">
+            
+            
+              <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='">
                 患者削除
               </button>
-            </a>
-            <a href="">
-              <button type="button" class="btn btn-info btn-lg btn-block">
+          
+              <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href='">
                 患者削除用パスワード設定
               <br>
               パスワード設定
               </button>
-            </a>
+            
            
         </section>
       </main>

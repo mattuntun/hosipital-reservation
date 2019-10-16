@@ -5,7 +5,7 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    
-      <link rel="stylesheet" href="../../reservation change/css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
+      <link rel="stylesheet" href="../../reservation_change/css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
     <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -38,7 +38,7 @@
       <section class="new-patient-registration"><!--開始　When is the holiday　開始-->
         <form>
           <div class="form-group">
-            <label class="control-label" id="new-patient-registration">追加診療科名を記載してください</label>
+            <label class="control-label" id="new-patient-registration">患者ID登録</label>
             <input class="form-control" id="new-patient-registration" type="text">
           </div>
 
@@ -46,9 +46,36 @@
           <br>
 
           <div class="form-group">
-            <label class="control-label">パスワードを入力してください</label>
-            <input class="form-control" type="text">
+            <h2>患者名登録</h2>
+
+            <table>
+              <tr>
+                <td>
+                  <label class="control-label">姓(漢字)</label>
+                  <input class="form-control" type="text">
+                </td>
+                <td>
+                  <label class="control-label">名(漢字)</label>
+                  <input class="form-control" type="text">
+                </td>
+              </tr>
+              <tr>
+              <td>
+                  <label class="control-label">姓(カタカナ)</label>
+                  <input class="form-control" type="text">
+                </td>
+                <td>
+                  <label class="control-label">名(カタカナ)</label>
+                  <input class="form-control" type="text">
+                </td>
+              </tr>
+              
+            </table>
+          
           </div>
+
+
+
         <h2>適用させる場合は&#x2611;</h2>       
         
         <br> <!--チェックボックスとh2のスペース-->        

@@ -7,7 +7,7 @@
    
       <link rel="stylesheet" href="css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
     <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
@@ -24,7 +24,7 @@
   <div class="wrapper"><!--body全体のclassをラッパーとする-->
     
       <header><!--ここからヘッダー始まるよ-->
-       <br> <h1>○○○○医院</h1>
+       <br> <h1>○○医院</h1>
       </header><!--ここでヘッダー終わり-->
       <main>
         <section class="hospital-meta"><!--予約設定変更の入り口-->
@@ -48,12 +48,15 @@
 
         <section class="patient-meta"><!--患者情報変更の入り口-->
           <h2><strong>患者設定</strong></h2>
-          <button type="button" class="btn btn-info btn-lg btn-block">
-            新規患者登録・変更・削除
-          </button>
-          <button type="button" class="btn btn-info btn-lg btn-block">
-            患者予約情報編集
-          </button>
+       
+            <button type="button" class="btn btn-info btn-lg btn-block" onClick="location.href='patient_registration_change_deletion/patient_registration_change_deletion.php'">
+              新規患者登録・変更・削除
+            </button>
+       
+            <button type="button" class="btn btn-info btn-lg btn-block" onClick="location.href='reservation_change/common_reservation_setting_screen.php'">
+              患者予約情報編集
+            </button>
+           
         </section>
       </main>
       <footer><!--フッターだよ-->

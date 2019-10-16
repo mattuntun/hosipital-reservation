@@ -39,7 +39,7 @@ body {
 
 }
 
-@media(max-width:767px;){
+@media(max-width:767px){
 	.wrapper{
 		margin: 0 8px ;
 	}
