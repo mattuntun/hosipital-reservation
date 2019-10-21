@@ -242,12 +242,45 @@ l{    /*ラベル*/
 	font-size: 3ex;
 }
 
-td{
-	font-size: 3ex;
-	margin-top: -20px;
+.pt-name-kanji{
+	margin: auto auto 20px auto;
 }
 
+.pt-name-kanji table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
 
+.pt-name-katakana{
+	margin: auto auto 20px auto;
+}
+
+.pt-name-katakana table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.pt-other{
+	margin: auto auto 20px auto;
+}
+
+.pt-other table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.pt-sex{
+	margin: auto auto 20px auto;
+}
+
+.pt-sex table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.apply{
+	margin-left: 30px;
+}
+
+.apply h2{
+	margin:0px 0px 50px 10px;
+}
 
 /*ここからフッター*/
 footer{
