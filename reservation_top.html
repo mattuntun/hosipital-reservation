@@ -6,12 +6,12 @@
     
     <link rel="stylesheet" href="css/style.css"><!--ファビコン(サイトのバーの画像)の種類(拡張子)と場所　　　　　入力！！！！-->
     <meta name="description" content="予約アプリ"><!--descriptionは概要・説明の事 その後に説明文を入れてあげる　　入力！！！！-->
-    <style>
+    <!--<style>
     *{
       outline: 1px solid #ff0000;
     }
     
-      </style>
+      </style>-->
   </head><!--ここで設定終了-->
   
   <body><!--ここから本文が始まるよ-->
@@ -23,47 +23,52 @@
       </header><!--ここでヘッダー終わり-->
       
       <main>
-        <section class="patient"><!--患者のカテゴリー-->
-          <div class="id">
-            <ul>
-              <li>患者ID</li>
-              <li><input type="number" name="patient-code"></li>
-            </ul>
-          </div>
+        <form action="未指定" method="POST" name="patient-data"><!--患者のカテゴリー-->
+          <section class="patient">
+            <div class="id">
+              <ul>
+                <li>患者ID</li>
+                <li><input type="number" name="patient-code"></li>
+              </ul>
+            </div>
 
-          <div class="pass">
-            <ul>
-              <li>パスワード</li>
-              <li><input type="text" name="patient-pass"></li>
-            </ul>
-          </div>
+            <div class="pass">
+              <ul>
+                <li>パスワード</li>
+                <li><input type="text" name="patient-pass"></li>
+              </ul>
+            </div>
 
-          <div class="switch">
-            <input type="submit" value="ログイン">
-            <input type="submit" value="初めての来院の方">
-          </div>
-        </section>
-        <section class="hospital"><!--病院のカテゴリー-->
-          <div class="adm-id"><!--病院のID入力欄-->
-            <ul>
-              <li class="adm-id-name">管理者ID</li>
-              <li><input type="text" name="id-number" class="input-id-number"></li>
-            </ul>
-          </div>
-          <div class="adm-pass"><!--病院のPASS入力欄-->
-            <ul>
-              <li class="adm-pass-name">パスワード</li>
-              <li><input type="text" name="password" class="input-pass-number"></li>
-            </ul>
-          </div>
-          <div class="switch">
-            <a href="hospital/hospital_top.html"><input type="submit" value="ログイン"></a>
-          </div>
-        
+            <div class="switch">
+              <input type="submit" value="ログイン">
+              <input type="submit" value="初めての来院の方">
+            </div>
+          </section>
+        </form><!--終了　患者のカテゴリー　終了-->
 
 
+        <form action="hospital/hospital_top.php" method="POST" name="hospital-index"><!--病院のカテゴリー-->
+          <section class="hospital">
+            <div class="adm-id"><!--病院のID入力欄-->
+              <ul>
+                <li class="adm-id-name">管理者ID</li>
+                <li><input type="text" name="id-number" class="input-id-number"></li>
+              </ul>
+            </div>
+            <div class="adm-pass"><!--病院のPASS入力欄-->
+              <ul>
+                <li class="adm-pass-name">パスワード</li>
+                <li><input type="text" name="password" class="input-pass-number"></li>
+              </ul>
+            </div>
+            <div class="switch">
+              <input type="submit" value="ログイン">
+            </div>
+        </form>
 
-      </section><!--病院のカテゴリー終わり-->
+
+
+        </section><!--病院のカテゴリー終わり-->
 
 
 

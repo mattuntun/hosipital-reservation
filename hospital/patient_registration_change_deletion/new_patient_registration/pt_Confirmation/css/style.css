@@ -1,6 +1,7 @@
 @charset"UTF-8";
 
 
+/*common reservation setting screen のcss*/
 
 html{
 	font-family:san-serif;
@@ -156,14 +157,14 @@ content:		'';
 
 
 .control-label{    /*ラベル*/
-	font-size: 50px;
+	font-size: 30px;
   
 }
 
 .form-control{    /*入力するところ*/
-	height: 170px;
-  font-size: 50px;
-  border-radius:30px;/*ボーダーの角を丸くする*/
+	height: 50px;
+  font-size: 30px;
+  border-radius:10px;/*ボーダーの角を丸くする*/
 }
 
 
@@ -226,19 +227,60 @@ l{    /*ラベル*/
   
 }
 
-#new-patient-registration input{    /*入力するところ*/
-	height: 10px;
-  font-size: 10px;
-  border-radius:10px;/*ボーダーの角を丸くする*/
-}
-
-
 
 /*終了　 入力フォーム　終了*/
-/*終了　新規患者登録　終了*/
 
+/*開始　患者情報登録画面　開始*/
 
+.pt-id{
+	height: 100px;
 
+}
+
+.pt-id h3{
+	margin: 50px;
+	font-size: 3ex;
+}
+
+.pt-name-kanji{
+	margin: auto auto 20px auto;
+}
+
+.pt-name-kanji table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.pt-name-katakana{
+	margin: auto auto 20px auto;
+}
+
+.pt-name-katakana table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.pt-other{
+	margin: auto auto 20px auto;
+}
+
+.pt-other table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.pt-sex{
+	margin: auto auto 20px auto;
+}
+
+.pt-sex table{
+	border-spacing: 5ex 0;/* [左右(5px)] [上下(0px)]で記述 */
+}
+
+.apply{
+	margin-left: 30px;
+}
+
+.apply h2{
+	margin:0px 0px 50px 10px;
+}
 
 /*ここからフッター*/
 footer{

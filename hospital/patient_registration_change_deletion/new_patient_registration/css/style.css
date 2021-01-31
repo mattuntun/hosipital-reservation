@@ -1,6 +1,7 @@
 @charset"UTF-8";
 
 
+/*common reservation setting screen のcss*/
 
 html{
 	font-family:san-serif;
@@ -156,14 +157,14 @@ content:		'';
 
 
 .control-label{    /*ラベル*/
-	font-size: 50px;
+	font-size: 30px;
   
 }
 
 .form-control{    /*入力するところ*/
-	height: 170px;
-  font-size: 50px;
-  border-radius:30px;/*ボーダーの角を丸くする*/
+	height: 50px;
+  font-size: 30px;
+  border-radius:10px;/*ボーダーの角を丸くする*/
 }
 
 
@@ -226,17 +227,13 @@ l{    /*ラベル*/
   
 }
 
-#new-patient-registration input{    /*入力するところ*/
-	height: 10px;
-  font-size: 10px;
-  border-radius:10px;/*ボーダーの角を丸くする*/
-}
-
-
 
 /*終了　 入力フォーム　終了*/
 /*終了　新規患者登録　終了*/
 
+.apply{
+	margin: 30px;
+}
 
 
 
